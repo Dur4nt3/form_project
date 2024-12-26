@@ -1,0 +1,223 @@
+@font-face {
+    font-family: Norse;
+    src: url(./fonts/Norse-Bold.woff2);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/RobotoFlex.woff2);
+}
+
+@font-face {
+    font-family: Geist;
+    src: url(./fonts/GeistMono-Regular.woff2);
+}
+
+:root {
+    --font-stack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    font-family: Roboto, var(--font-stack);
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar-cont {
+    height: 100%;
+    min-width: 30vw;
+
+    position: relative;
+
+    background-image: url(./images/forest-leaves.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+}
+
+.logo-cont {
+    position: absolute;
+    top: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.odin-logo {
+    height: 9rem;
+
+    aspect-ratio: 7 / 9;
+}
+
+.logo-text {
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: Norse, var(--font-stack);
+    color: white;
+}
+
+.attr-cont {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+
+    width: 40%;
+    margin-bottom: 0.3rem;
+}
+
+.attr {
+    opacity: 0.8;
+    font-size: 0.85rem;
+    text-align: center;
+    color: white;
+}
+
+.attr > a {
+    opacity: 0.8;
+    font-size: 0.85rem;
+    color: white;
+}
+
+.form-wrapper {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #f6f6f6;
+}
+
+.intro-header {
+    margin-left: 3rem;
+}
+
+.intro-header > p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    max-width: 52ch;
+}
+
+.intro-header p:first-child {
+    margin-bottom: 0;
+}
+
+.main-form {
+    padding: 2rem;
+    padding-top: 0.5rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4.5px 4.5px 0.5px #c5c5c5;
+}
+
+.form-header {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2a2a2a;
+
+    margin-bottom: 1rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 0.8rem;
+    flex-shrink: 1;
+}
+
+.sub-row {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cont label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #1f1f1f;
+    font-family: Geist, var(--font-stack);
+}
+
+.form-cont input {
+    min-width: 12rem;
+    width: 50%;
+
+    border: 1px solid #E5E7EB;
+    border-radius: 0.3rem;
+    background-color: #fffefe;
+
+    transition-duration: 0.1s;
+}
+
+.form-cont input:focus {
+    outline: none;
+    border: 2px solid #4075ff;
+    box-shadow: 0 2px 6.5px 3px #dddddd;
+}
+
+.form-cont input:invalid:focus:not(:placeholder-shown) {
+    border: 2px solid red;
+}
+
+.form-cont input:valid:focus:not(:placeholder-shown) {
+    border: 2px solid #00ff13;
+}
+
+.form-cont input:invalid:not(:placeholder-shown):not(:focus) {
+    border: 2px solid red;
+    background-color: #ffd0d0;
+}
+
+.form-cont input:valid:not(:placeholder-shown):not(:focus) {
+    border: 2px solid #00ff13;
+    background-color: #cdffd1;
+}
+
+.submission {
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+.form-button {
+    width: 12rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    background-color: #596D48;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4.5px 4.5px 0.5px #c5c5c5;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.form-button:active {
+    background-color: #6f9e46;
+}
+
+.switch-form {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.switch-form > a {
+    font-size: 0.85rem;
+    color: #596D48;
+    font-weight: 800;
+    text-decoration: none;
+}

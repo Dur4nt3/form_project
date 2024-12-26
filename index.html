@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <script src="./script.js" defer></script>
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <div class="sidebar-cont">
+        <div class="logo-cont">
+            <img src="./images/odin-lined.png" alt="logo" class="odin-logo">
+            <p class="logo-text">ODIN</p>
+        </div>
+        <div class="attr-cont">
+            <p class="attr">Photo by
+                <a href="https://unsplash.com/@haliewestphoto" rel="noopener noreferrer">Halie West</a>
+                on <a href="https://unsplash.com/" rel="noopener noreferrer">Unsplash</a></p>
+        </div>
+    </div>
+
+    <div class="form-wrapper">
+        <div class="intro-header">
+            <p>This is not a real online service! 
+            You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <form action="" method="post" class="form-cont">
+            
+            <div class="main-form">
+                <h2 class="form-header">Let's do this!</h2>
+                <div class="form-row">
+                    <div class="sub-row">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" required placeholder="" pattern="^[a-zA-Z]*$">
+                    </div>
+                    <div class="sub-row">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" required placeholder="" pattern="^[a-zA-Z]*$">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="sub-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="">
+                    </div>
+                    <div class="sub-row">
+                        <label for="phone-num">Phone Number</label>
+                        <input type="tel" id="phone-num" name="phone-num" required placeholder="" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="sub-row">
+                        <label for="pwd">Password</label>
+                        <input type="password" id="pwd" name="pwd" required placeholder="" minlength="10" maxlength="20">
+                    </div>
+                    <div class="sub-row">
+                        <label for="conf-pwd">Confirm Password</label>
+                        <input type="password" id="conf-pwd" name="conf-pwd" required placeholder="" minlength="10" maxlength="20">
+                    </div>
+                </div>
+            </div>
+
+            <div class="submission">
+                <button type="submit" class="form-button">Create Account</button>
+                <p class="switch-form">Already have an account?
+                    <a href="" class="login-link">Log in</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
