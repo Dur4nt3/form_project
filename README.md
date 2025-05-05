@@ -14,14 +14,8 @@ You can find the "Sign-Up Form Design" [here](https://github.com/Dur4nt3/signup_
 
 Both project share similarities, yet they have their own unique features.
 
-**Skills demonstrated: Intermediate HTML, Intermediate CSS, basic JavaScript**
+*Unlike the aforementioned project, this project doesn't include form validation via JavaScript as it's a concept that will be introduced at a later stage.*
 
-**Webpage responsiveness: THIS PROJECT WILL NOT DISPLAY PROPERLY ON A MOBILE PHONE**
+**Skills demonstrated: Creating forms from a given design, basic HTML forms, HTML form validation**
 
-### Notes:
-
-At this stage, I've been asked to NOT use JavaScript to validate the form, this means that there is no custom design for invalid form submissions and most importantly no validation that the passwords actually match or are secure (apart from a basic 10 character minimum requirement).
-
-*In contrast to this project* in my "Sign-Up Form Design" project I've implemented custom JavaScript validation, you can view that project [here](https://github.com/Dur4nt3/signup_project). [^1]
-
-[^1]: Although I can reuse the JavaScript I've used in my "Sign-Up Form Design" project, I've opted not to do so as I want to implement JavaScript form validation in this project only after I took a deep-dive into that subject, and see the difference between my initial attempt to implement JavaScript form validation and my second attempt after taking a deep-dive into the subject.
+**Webpage responsiveness: THIS PROJECT WILL NOT DISPLAY PROPERLY ON MOBILE DEVICES**
